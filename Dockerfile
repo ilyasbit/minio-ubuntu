@@ -11,4 +11,6 @@ RUN wget https://dl.minio.io/server/minio/release/linux-amd64/minio -O /usr/loca
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
+USER root:root
+
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
