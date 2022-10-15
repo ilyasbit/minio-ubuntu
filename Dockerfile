@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-EXPOSE 443
+EXPOSE 443 10000
 
 RUN DEBIAN_FRONTEND=noninteractive apt update -y && \
     DEBIAN_FRONTEND=noninteractive apt install --no-install-recommends -y sudo nano inetutils-ping cron jq unzip progress software-properties-common ca-certificates screen htop nload wget curl aria2 gnupg lsb-release
