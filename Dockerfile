@@ -13,5 +13,4 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 
 USER root:root
 
-#CMD ["/bin/ping","localhost"]
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
