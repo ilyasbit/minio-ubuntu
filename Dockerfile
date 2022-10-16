@@ -10,8 +10,7 @@ RUN wget https://dl.minio.io/server/minio/release/linux-amd64/minio -O /usr/loca
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
-#COPY private.key /root/.minio/certs/private.key
-#COPY public.crt /root/.minio/certs/public.crt
+
 USER root:root
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
