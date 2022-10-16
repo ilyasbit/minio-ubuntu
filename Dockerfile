@@ -9,7 +9,7 @@ RUN wget https://dl.minio.io/server/minio/release/linux-amd64/minio -O /usr/loca
 
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-COPY hosts /root/hosts
+COPY hosts /etc/hosts
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 USER root:root
