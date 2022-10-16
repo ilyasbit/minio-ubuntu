@@ -4,5 +4,6 @@
 if [ -z "$MINIO_OPTS" ]; then
 exec minio server --console-address ":10000" --address ":443" /data;
 else
+cat /root/hosts >> /etc/hosts
 exec minio server $MINIO_OPTS --console-address ":10000" --address ":443";
 fi
